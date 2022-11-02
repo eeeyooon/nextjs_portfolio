@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <>
-      <footer className="text-gray-600 body-font">
-        <div className="bg-gray-100">
+      <footer className="body-font">
+        <div className="">
           <div className="container flex flex-col items-center px-5 py-6 mx-auto sm:flex-row">
             <Link legacyBehavior href="/">
               <a className="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
@@ -26,7 +26,7 @@ export default function Footer() {
             <span className="inline-flex justify-center mt-4 sm:ml-auto sm:mt-0 sm:justify-start">
               <a
                 href="https://github.com/eeeyooon"
-                className="ml-3 text-gray-500"
+                className="ml-3 text-gray-500 dark:fill-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
