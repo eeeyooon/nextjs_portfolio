@@ -6,8 +6,8 @@ export default function ProjectItem({ data }) {
   const description = data.properties.Description.rich_text[0].plain_text;
   const img = data.cover.file?.url || data.cover.external.url;
   const tags = data.properties.Tags.multi_select;
-  const start = data.properties.WorkPeriod.data.start;
-  const end = data.properties.WorkPeriod.data.end;
+  const start = data.properties.WorkPeriod.date.start;
+  const end = data.properties.WorkPeriod.date.end;
 
   const calculatedPeriod = (start, end) => {
     const startDateStringArray = start.split("-");
@@ -24,20 +24,20 @@ export default function ProjectItem({ data }) {
       endDateStringArray[2]
     );
 
-    console.log(`startDate: ${startDate}`);
-    console.log(`endDate: ${endDate}`);
+    // console.log(`startDate: ${startDate}`);
+    // console.log(`endDate: ${endDate}`);
 
     const diffInMs = Math.abs(endDate - startDate);
     const result = diffInMs / (1000 * 60 * 60 * 24);
 
-    console.log(`기간 : ${result}`);
+    // console.log(`기간 : ${result}`);
     return result;
   };
 
   return (
     <div className="project-card">
       <Image
-        className="object-cover w-full mb-10 h-3/6 rounded-t-xl"
+        className="object-cover w-full mb-10 h-2/5 rounded-t-xl"
         src={img}
         width="50"
         height="20"
@@ -51,9 +51,9 @@ export default function ProjectItem({ data }) {
         <h2 className="text-2xl font-bold">{title}</h2>
         <h2 className="mt-4 text-xl">{description}</h2>
         <a href={github}>깃허브 바로가기</a>
-        <h2 className="mt-4 text-xl">
-          작업기간: {start} ~ {end} ({calculatedPeriod(start, end)})
-        </h2>
+        <p className="my-1">
+          작업기간: {start} ~ {end} ({calculatedPeriod(start, end)}일)
+        </p>
         {/* tags */}
         <div className="flex items-start mt-2">
           {tags.map((aTag) => (
