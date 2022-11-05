@@ -1,20 +1,28 @@
 import Layout from "../components/layout";
 import Head from "next/head";
 import { TOKEN, DATABASE_ID } from "../config";
+import ProjectItem from "../components/projects/project-item";
 
 export default function Projects({ projects }) {
   return (
     <Layout>
-      <Head>
-        <title>eeeyoon's projects</title>
-        <meta name="description" content="프로젝트 확인" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <h2>총 프로젝트 : {projects.results.length} </h2>
+      <div className="flex flex-col items-center justify-center min-h-screen px-6 mb-10">
+        <Head>
+          <title>eeeyoon's projects</title>
+          <meta name="description" content="프로젝트 확인" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <h2 className="text-4xl font-bold sm:text-3xl">
+          총 프로젝트 :
+          <span className="pl-4 text-blue-500">{projects.results.length}</span>
+        </h2>
 
-      {projects.results.map((aProject) => (
-        <h2>{aProject.properties.Name.title[0].plain_text}</h2>
-      ))}
+        <div className="grid grid-cols-1 gap-8 py-10 m-6 justify-items-center md:grid-cols-2">
+          {projects.results.map((aProject) => (
+            <ProjectItem key={aProject.id} data={aProject} />
+          ))}
+        </div>
+      </div>
     </Layout>
   );
 }
@@ -48,8 +56,6 @@ export async function getStaticProps() {
   //응답값을 json으로 만들어줌.
   const projects = await res.json();
 
-  console.log(projects);
-
   //프로젝트 아이디
   //const projectIds = projects.results.map((aProject) => aProject.id);
   //console.log(`projectIds : ${projectIds}`);
@@ -59,7 +65,7 @@ export async function getStaticProps() {
     (aProject) => aProject.properties.Name.title[0].plain_text
   );
 
-  console.log(`projectNames : ${projectNames}`);
+  // console.log(`projectNames : ${projectNames}`);
 
   return {
     props: { projects },
