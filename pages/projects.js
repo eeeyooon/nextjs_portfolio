@@ -12,12 +12,12 @@ export default function Projects({ projects }) {
           <meta name="description" content="프로젝트 확인" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <h2 className="mb-8 text-4xl font-bold sm:text-3xl">
+        <h2 className="mb-8 text-4xl font-bold sm:text-3xl font-power">
           총 프로젝트 :
           <span className="pl-4 text-blue-500">{projects.results.length}</span>
         </h2>
 
-        <div className="grid w-4/5 grid-cols-1 gap-20 px-24 m-4 justify-items-center md:grid-cols-2">
+        <div className="grid w-4/5 grid-cols-1 gap-16 m-4 px-18 justify-items-center md:grid-cols-2">
           {projects.results.map((aProject) => (
             <ProjectItem key={aProject.id} data={aProject} />
           ))}

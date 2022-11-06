@@ -36,7 +36,8 @@ export default function ProjectItem({ data }) {
 
   return (
     <div className="project-card">
-      <Image
+      {/* 이미지 없는게 더 나아보이는데 */}
+      {/* <Image
         className="object-cover w-full mb-10 h-2/5 rounded-t-xl"
         src={img}
         width="50"
@@ -45,7 +46,7 @@ export default function ProjectItem({ data }) {
         layout="responsive"
         objectFit="cover"
         quality={100}
-      />
+      /> */}
 
       <div className="flex flex-col p-4 ">
         <h2 className="text-2xl font-bold">{title}</h2>
@@ -55,10 +56,10 @@ export default function ProjectItem({ data }) {
           작업기간: {start} ~ {end} ({calculatedPeriod(start, end)}일)
         </p>
         {/* tags */}
-        <div className="flex items-start mt-2">
+        <div className="flex flex-wrap items-start mt-2">
           {tags.map((aTag) => (
             <h2
-              className="px-2 py-1 mr-2 rounded-md bg-sky-200 dark:bg-sky-700 w-30"
+              className="px-2 py-1 my-1 mr-2 rounded-md bg-sky-200 dark:bg-sky-700 w-30"
               key={aTag.id}
             >
               {aTag.name}
