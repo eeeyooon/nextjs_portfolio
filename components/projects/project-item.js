@@ -51,7 +51,9 @@ export default function ProjectItem({ data }) {
       <div className="flex flex-col p-4 ">
         <h2 className="text-2xl font-bold">{title}</h2>
         <h2 className="mt-4 text-xl">{description}</h2>
-        <a href={github}>깃허브 바로가기</a>
+        <a href={github} target="_blank">
+          깃허브 바로가기
+        </a>
         <p className="my-1">
           작업기간: {start} ~ {end} ({calculatedPeriod(start, end)}일)
         </p>
@@ -59,7 +61,7 @@ export default function ProjectItem({ data }) {
         <div className="flex flex-wrap items-start mt-2">
           {tags.map((aTag) => (
             <h2
-              className="px-2 py-1 my-1 mr-2 rounded-md bg-sky-200 dark:bg-sky-700 w-30"
+              className="px-2 py-1 my-1 mr-2 rounded-md bg-violet-200 dark:bg-violet-500 w-30"
               key={aTag.id}
             >
               {aTag.name}

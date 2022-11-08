@@ -26,6 +26,30 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "SBAggroB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GangwonEdu_OTFBoldA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font_edu {
+  font-family: "GangwonEdu_OTFBoldA";
+}
+
+.font_aggro {
+  font-family: "SBAggroB";
+}
+
 .font-power {
   font-family: "GangwonEduPowerExtraBoldA";
 }
@@ -43,7 +67,7 @@
 }
 
 .btn-project {
-  @apply inline-flex px-6 py-2 text-lg text-white border-0 rounded bg-violet-600 dark:text-white focus:outline-none hover:bg-violet-400 hover:text-white;
+  @apply inline-flex px-6 pt-3 pb-2 text-lg text-white border-0 rounded font_edu bg-violet-600 dark:text-white focus:outline-none hover:bg-violet-400 hover:text-white;
 }
 
 .project-card {
