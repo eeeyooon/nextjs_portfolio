@@ -15,17 +15,17 @@ export default function Contact() {
         />
         <div className="m-10 text-center mb-7">
           <div>
-            <span className="font-bold text-md font_bumsuk">Name</span>
-            <span className="text-lg font_edu"> 강지윤</span>
+            <span className="text-lg font-bold font_bumsuk ">Name</span>
+            <span className="text-xl font_edu"> 강지윤</span>
           </div>
 
           <div>
-            <span className="font-bold text-md font_bumsuk">Birth</span>
-            <span className="text-lg font_edu"> 1999.07.08</span>
+            <span className="text-lg font-bold font_bumsuk">Birth</span>
+            <span className="text-xl font_edu"> 1999.07.08</span>
           </div>
           <div>
-            <span className="font-bold text-md font_bumsuk">E-mail</span>
-            <span className="text-lg font_edu"> vywns4569@gmail.com</span>
+            <span className="text-lg font-bold font_bumsuk">E-mail</span>
+            <span className="text-xl font_edu"> vywns4569@gmail.com</span>
           </div>
         </div>
 

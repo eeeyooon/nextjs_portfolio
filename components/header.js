@@ -8,7 +8,7 @@ export default function Header() {
         <div className="container flex flex-col flex-wrap items-center p-5 mx-auto md:flex-row">
           <Link legacyBehavior href="/">
             <a className="flex items-center mb-4 font-medium text-gray-900 title-font md:mb-0">
-              <svg
+              {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 stroke="currentColor"
@@ -19,8 +19,8 @@ export default function Header() {
                 viewBox="0 0 24 24"
               >
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-              </svg>
-              <h3 className="ml-3 text-xl font-bumsuk">eeeyooon's portfolio</h3>
+              </svg> */}
+              <h3 className="ml-3 text-xl font_kyobo">yooon's portfolio</h3>
             </a>
           </Link>
 
