@@ -51,7 +51,11 @@ export default function ProjectItem({ data }) {
       <div className="flex flex-col p-4 ">
         <h2 className="text-2xl font-bold">{title}</h2>
         <h2 className="mt-4 text-xl">{description}</h2>
-        <a href={github} target="_blank">
+        <a
+          className="hover:text-violet-300 hover:font-semibold"
+          href={github}
+          target="_blank"
+        >
           깃허브 바로가기
         </a>
         <p className="my-1">

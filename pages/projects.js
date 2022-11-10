@@ -12,7 +12,7 @@ export default function Projects({ projects }) {
           <meta name="description" content="프로젝트 확인" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <h2 className="mb-8 text-4xl font-bold sm:text-3xl font-power">
+        <h2 className="mt-10 mb-8 text-4xl font-bold sm:text-3xl font-power">
           총 프로젝트 :
           <span className="pl-4 text-violet-400">
             {projects.results.length}
