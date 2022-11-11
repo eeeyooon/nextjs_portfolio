@@ -33,6 +33,7 @@ export default function Contact() {
           <a
             href="https://github.com/eeeyooon"
             target="_blank"
+            rel="noopener noreferrer"
             className="ml-4 text-gray-500 dark:fill-white"
           >
             <svg
@@ -47,6 +48,7 @@ export default function Contact() {
           <a
             href="https://eeeyooon.notion.site/eeeyooon-618d4893cc98476fae89771ae3f748b3"
             target="_blank"
+            rel="noopener noreferrer"
             className="ml-4 text-gray-500 dark:fill-white"
           >
             <svg
@@ -61,6 +63,7 @@ export default function Contact() {
           <a
             href="https://velog.io/@miiruuu"
             target="_blank"
+            rel="noopener noreferrer"
             className="ml-4 fill-black dark:fill-white"
           >
             <svg

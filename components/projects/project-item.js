@@ -36,7 +36,7 @@ export default function ProjectItem({ data }) {
 
   return (
     <div className="project-card">
-      {/* 이미지 없는게 더 나아보이는데 */}
+      {/* 노션 프로젝트 커버 img */}
       {/* <Image
         className="object-cover w-full mb-10 h-2/5 rounded-t-xl"
         src={img}
@@ -52,9 +52,10 @@ export default function ProjectItem({ data }) {
         <h2 className="text-2xl font-bold">{title}</h2>
         <h2 className="mt-4 text-xl">{description}</h2>
         <a
-          className="hover:text-violet-300 hover:font-semibold"
+          className="hover:text-gray-500 hover:font-semibold"
           href={github}
           target="_blank"
+          rel="noopener noreferrer"
         >
           깃허브 바로가기
         </a>

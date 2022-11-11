@@ -26,13 +26,13 @@ export default function Header() {
 
           <nav className="flex flex-wrap items-center justify-center text-base md:ml-auto">
             <Link legacyBehavior href="/">
-              <a className="mr-5 hover:text-gray-900">Home</a>
+              <a className="mr-5 hover:text-gray-400 ">Home</a>
             </Link>
             <Link legacyBehavior href="/projects">
-              <a className="mr-5 hover:text-gray-900">Projects</a>
+              <a className="mr-5 hover:text-gray-400">Projects</a>
             </Link>
             <Link legacyBehavior href="/about">
-              <a className="mr-5 hover:text-gray-900">About</a>
+              <a className="mr-5 hover:text-gray-400">About</a>
             </Link>
           </nav>
 
