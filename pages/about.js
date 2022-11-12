@@ -5,7 +5,9 @@ export default function Contact() {
   return (
     <Layout>
       <div className="mt-10">
-        <h1 className="text-4xl text-center font-power">About Me</h1>
+        <h1 className="text-4xl text-center font-power">
+          About <span className="text-violet-400"> Me</span>
+        </h1>
         <Image
           className="m-auto mt-5 "
           src="/profile_emoji.png"
