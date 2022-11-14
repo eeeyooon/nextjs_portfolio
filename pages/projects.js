@@ -8,7 +8,7 @@ export default function Projects({ projects }) {
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen px-6 mb-10">
         <Head>
-          <title>eeeyoon's projects</title>
+          <title>eeeyoon&apos;s projects</title>
           <meta name="description" content="프로젝트 확인" />
           <link rel="icon" href="/favicon.ico" />
         </Head>

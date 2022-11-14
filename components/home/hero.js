@@ -7,7 +7,7 @@ export default function Hero() {
     <>
       <div className="flex flex-col items-center mb-16 text-center lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0">
         <h1 className="mb-4 text-3xl font-medium text-gray-900 font-saeeum title-font sm:text-4xl">
-          Hello! I'm eeeyooon <span> </span>
+          Hello! I&apos;m eeeyooon <span> </span>
           {/* <br className="hidden lg:inline-block" />
           Let me show you */}
           <Image
